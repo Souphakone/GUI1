@@ -1,3 +1,5 @@
+/**https://codepen.io/skarjan42/details/WNpdVNL*/
+
 "use strict";
 
 function isLinkExternal(anchor) {

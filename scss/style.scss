@@ -11,6 +11,7 @@ $Anglais: darkorange;
 $Francais: darkred;
 $PRW1: deeppink;
 $CLD1: oldlace;
+$Calendar : #216583;
 /* fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
@@ -186,6 +187,10 @@ small {
 .clr-blue {
   color: #5a189a;
 }
+.clr-CPNV{
+    
+    color: #216583;
+}
 
 .clr-dark-red {
   color: #7c0000;
@@ -274,7 +279,7 @@ small {
 
 .hov-link:hover > .hov-border,
 .lang-link:hover > .lang-border {
-  border-top: solid 3px rgb(90, 24, 154, 100%);
+  border-top: solid 3px $Calendar;
   top: 30px;
 }
 
@@ -284,7 +289,7 @@ small {
   padding: 8px 12px;
   display: inline-block;
   position: relative;
-  color: #5a189a;
+  color: $Calendar;
 }
 
 .active-border,
@@ -292,7 +297,7 @@ small {
   position: absolute;
   top: 30px;
   color: rgb(0, 0, 0, 0%);
-  border-top: 3px solid #5a189a;
+  border-top: 3px solid $Calendar;
 }
 
 /* this hides the copy of text which is used to determine the border length */

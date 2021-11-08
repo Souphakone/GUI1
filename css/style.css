@@ -172,6 +172,10 @@ small {
   color: #5a189a;
 }
 
+.clr-CPNV {
+  color: #216583;
+}
+
 .clr-dark-red {
   color: #7c0000;
 }
@@ -259,7 +263,7 @@ small {
 
 .hov-link:hover > .hov-border,
 .lang-link:hover > .lang-border {
-  border-top: solid 3px #5a189a;
+  border-top: solid 3px #216583;
   top: 30px;
 }
 
@@ -269,7 +273,7 @@ small {
   padding: 8px 12px;
   display: inline-block;
   position: relative;
-  color: #5a189a;
+  color: #216583;
 }
 
 .active-border,
@@ -277,7 +281,7 @@ small {
   position: absolute;
   top: 30px;
   color: rgba(0, 0, 0, 0);
-  border-top: 3px solid #5a189a;
+  border-top: 3px solid #216583;
 }
 
 /* this hides the copy of text which is used to determine the border length */
