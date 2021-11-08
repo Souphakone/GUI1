@@ -1,0 +1,36 @@
+$ToggleColor: rgba(218, 223, 225, 1)
+;
+$BackgroundColor: rgba(42, 187, 155, 1);
+
+.royal-navy .calendar-sidebar > .month-list {
+    background-color: $BackgroundColor;
+}
+.royal-navy .calendar-sidebar {
+    
+    background-color: $BackgroundColor;
+}
+
+.royal-navy .calendar-events {
+    background-color: $BackgroundColor;
+}
+
+.royal-navy #eventListToggler {
+    background-color: $ToggleColor;
+    -webkit-box-shadow: 0 5px 10px -3px $ToggleColor;
+    box-shadow: 0 5px 10px -3px $ToggleColor;
+}
+
+.royal-navy .calendar-sidebar > span#sidebarToggler {
+    background-color: $ToggleColor;
+    -webkit-box-shadow: 0 5px 10px -3px $ToggleColor;
+    box-shadow: 0 5px 10px -3px $ToggleColor;
+}
+
+.royal-navy tr.calendar-body .calendar-day .day.calendar-active,
+.royal-navy tr.calendar-body .calendar-day .day.calendar-active:hover {
+    border-color: $ToggleColor;
+}
+
+.royal-navy tr.calendar-body .calendar-day .day.calendar-today {
+    background-color: $BackgroundColor;
+}

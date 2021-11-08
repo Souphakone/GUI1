@@ -1,0 +1,34 @@
+.royal-navy .calendar-sidebar > .month-list {
+  background-color: #2abb9b;
+}
+
+.royal-navy .calendar-sidebar {
+  background-color: #2abb9b;
+}
+
+.royal-navy .calendar-events {
+  background-color: #2abb9b;
+}
+
+.royal-navy #eventListToggler {
+  background-color: #dadfe1;
+  -webkit-box-shadow: 0 5px 10px -3px #dadfe1;
+  box-shadow: 0 5px 10px -3px #dadfe1;
+}
+
+.royal-navy .calendar-sidebar > span#sidebarToggler {
+  background-color: #dadfe1;
+  -webkit-box-shadow: 0 5px 10px -3px #dadfe1;
+  box-shadow: 0 5px 10px -3px #dadfe1;
+}
+
+.royal-navy tr.calendar-body .calendar-day .day.calendar-active,
+.royal-navy tr.calendar-body .calendar-day .day.calendar-active:hover {
+  border-color: #dadfe1;
+}
+
+.royal-navy tr.calendar-body .calendar-day .day.calendar-today {
+  background-color: #2abb9b;
+}
+
+/*# sourceMappingURL=style.css.map */
