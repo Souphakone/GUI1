@@ -1,0 +1,12 @@
+{"name": "MyCpnvCalendar",
+"short_name": "Calendar",
+"theme_color": "rgba(42, 187, 155, 1)",
+"background_color": "white",
+"display": "standalone",
+"start_url": "index.htm",
+"icons": [{
+  "src": "images/icons/logo.png",
+  "sizes": "512x512",
+  "type": "image/png"
+}
+ ]}
