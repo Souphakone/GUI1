@@ -883,7 +883,10 @@
         '<div class="calendar-events">' +
         '<div class="event-header"><p></p></div>' +
         '<div class="event-list"></div>' +
-        "</div>";
+        '<div class="addEvent"><p>'+
+        '<button type="button" class="btn btn-light" data-toggle="modal" data-target="#addEvent">Ajouter un événement</button>'+
+        '</p></div>'+
+        '</div>';
 
       // --- Finally, build it now! --- //
       _.$elements.calendarEl.html(markup);

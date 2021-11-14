@@ -18,6 +18,8 @@ $Calendar : #216583;
 @import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+@import url("../css/regular.min.css");
+@import url("../css/solid.min.css");
 
 * {
   margin: 0;
@@ -450,7 +452,7 @@ small {
 
 #conteneur{
     width: 80%;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 .type-bullet>.type-gui1{   
@@ -534,4 +536,13 @@ background-color:$PRW1;
 
 .event-container>.event-icon>div.event-bullet-CLD1{
 background-color:$CLD1;
+}
+
+.addEvent{   
+  position: relative;
+  float: right;
+  right:    0;
+  bottom:   0;
+  padding-top: 5%;
+  
 }

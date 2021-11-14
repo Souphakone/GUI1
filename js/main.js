@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   $("#calendar").evoCalendar("addCalendarEvent", [
     {
-      id: "kNybja6",
+      id: "1",
       name: "GUI 1",
       date: "08 novembre, 2021",
       type: "GUI1",
@@ -20,7 +20,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "2",
       name: "Physique",
       date: "08 novembre, 2021",
       type: "Physique",
@@ -30,7 +30,7 @@ $(document).ready(function () {
       end: "16:05",
     },
     {
-      id: "kNybja6",
+      id: "3",
       name: "GPR1",
       date: "09 novembre, 2021",
       type: "GPR1",
@@ -40,7 +40,7 @@ $(document).ready(function () {
       end: "09:35",
     },
     {
-      id: "kNybja6",
+      id: "4",
       name: "Gestion et organisation",
       date: "09 novembre, 2021",
       type: "GAndO",
@@ -50,7 +50,7 @@ $(document).ready(function () {
       end: "10:35",
     },
     {
-      id: "kNybja6",
+      id: "5",
       name: "SQL1",
       date: "09 novembre, 2021",
       type: "SQL1",
@@ -60,7 +60,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "6",
       name: "Maw1-1",
       date: "09 novembre, 2021",
       type: "Maw1-1",
@@ -70,7 +70,7 @@ $(document).ready(function () {
       end: "16:55",
     },
     {
-      id: "kNybja6",
+      id: "7",
       name: "Mathématique",
       date: "10 novembre, 2021",
       type: "Mathematique",
@@ -80,7 +80,7 @@ $(document).ready(function () {
       end: "09:35",
     },
     {
-      id: "kNybja6",
+      id: "8",
       name: "Suivi de stages ES",
       date: "10 novembre, 2021",
       type: "SQL1",
@@ -90,7 +90,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "9",
       name: "Suivi de stages ES",
       date: "10 novembre, 2021",
       type: "SQL1",
@@ -100,7 +100,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "10",
       name: "Maw1-1",
       date: "11 novembre, 2021",
       type: "Maw1-1",
@@ -110,7 +110,7 @@ $(document).ready(function () {
       end: "10:35",
     },
     {
-      id: "kNybja6",
+      id: "11",
       name: "Anglais",
       date: "11 novembre, 2021",
       type: "Anglais",
@@ -120,7 +120,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "12",
       name: "Mathématique",
       date: "11 novembre, 2021",
       type: "Mathematique",
@@ -130,7 +130,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "13",
       name: "Français",
       date: "11 novembre, 2021",
       type: "Francais",
@@ -140,7 +140,7 @@ $(document).ready(function () {
       end: "16:55",
     },
     {
-      id: "kNybja6",
+      id: "14",
       name: "PRW1",
       date: "12 novembre, 2021",
       type: "PRW1",
@@ -150,7 +150,7 @@ $(document).ready(function () {
       end: "12:15",
     },
     {
-      id: "kNybja6",
+      id: "15",
       name: "CLD1",
       date: "12 novembre, 2021",
       type: "CLD1",
@@ -162,11 +162,28 @@ $(document).ready(function () {
   ]);
 
   /**Show event list */
+  $(".calendar-day").on("click", "div", function() {
+    if ($("#calendar").hasClass("event-hide")) {
+      
+    $('#calendar').evoCalendar('toggleEventList');
+  }
+  });
 
-    $(".calendar-day").on("click", "div", function() {
-      if ($("#calendar").hasClass("event-hide")) {
-        
-      $('#calendar').evoCalendar('toggleEventList');
-    }
-    });
+  /**Add event */
+  $(".calendar-day").on("click", "div", function() {
+    console.log($(this).data("date-val"));
+  });
+
+  $(".calendar-day").on("click", "div", function() {
+    console.log($(this).data("date-val"));
+  });
+  $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+  })
 });
