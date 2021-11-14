@@ -883,8 +883,9 @@
         '<div class="calendar-events">' +
         '<div class="event-header"><p></p></div>' +
         '<div class="event-list"></div>' +
-        '<div class="addEvent"><p>'+
-        '<button type="button" class="btn btn-light" data-toggle="modal" data-target="#addEvent">Ajouter un événement</button>'+
+        '<div class="event-option"><p>'+
+        '<button type="button" class="btn btn-outline-light btn-sm " data-toggle="modal" data-target="#formEvent"><i class="far fa-plus-square icon"></i> Ajouter</button>'+
+        '<button type="button" class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#formEvent"><i class="far fa-edit icon"></i> Modifier</button>'+
         '</p></div>'+
         '</div>';
 
