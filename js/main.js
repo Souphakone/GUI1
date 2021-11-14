@@ -160,4 +160,13 @@ $(document).ready(function () {
       end: "16:05",
     },
   ]);
+
+  /**Show event list */
+
+    $(".calendar-day").on("click", "div", function() {
+      if ($("#calendar").hasClass("event-hide")) {
+        
+      $('#calendar').evoCalendar('toggleEventList');
+    }
+    });
 });
