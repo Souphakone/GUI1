@@ -1037,7 +1037,7 @@
         event_data.end +
         "</span> </p>";
     markup += "</div>";
-    markup += "</div>";
+    markup += '<button type="button" class="btn btn-outline-light btn-sm" onclick="myFunction()"><i class="far fa-trash-alt icon"></i> Supprimer</button></div>';
     eventListEl.append(markup);
 
     _.$elements.eventEl

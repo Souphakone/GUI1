@@ -170,17 +170,14 @@ $(document).ready(function () {
   });
 
   /**Add event */
-  $(".calendar-day").on("click", "div", function() {
-    console.log($(this).data("date-val"));
-  });
-
-
     $('#formEvent').on('show.bs.modal',function(){
         $("#date").val('Hello...How are you?');
     }); 
     
     /**Delete event */
-    $("#del").on("click", function() {
+    $(".del").click(function() {
      alert("dsdadasd");
     });
+    
+    
 });
